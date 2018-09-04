@@ -36,7 +36,7 @@ h2 {
 }
 
 header {
-    background-color: #B8C6D1;
+    background-color: #D1C7B8;
     grid-area: bob;
 }
 #sec1 {
@@ -44,7 +44,7 @@ header {
     grid-area: s1;
 }
 #sec2 {
-    background-color: ;
+    background-color: #5A7284;
     grid-area: s2;
 }
 footer {
