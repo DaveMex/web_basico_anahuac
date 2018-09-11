@@ -20,7 +20,7 @@ h2 {
 .parrafo {
     color: red;
 }
-
+/* Aqui empieza el grid */
 #container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);

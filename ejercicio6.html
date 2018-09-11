@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css shapes.</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            grid-gap: 1rem;
+        }
+        #imagen1 {
+        float: left;
+        shape-outside: circle(138px at 28.60% 42.75%);
+        }
+        #imagen2 {
+        float: left;
+        shape-outside: url(images/cat_PNG50516.png);
+        }
+        #imagen3 {
+        float: right;
+        shape-outside: polygon(16.32% 99.39%, 58.93% 99.70%, 60.08% 69.1%, 57.39% 41.26%, 47.24% 25.53%, 46.1% -1.88%, 37.29% 19.12%, 26.29% 29.9%, 18.04% 18.6%, 12.64% 19.43%, 10.14% 35.54%, 14.96% 57.36%, 5.84% 67.27%);
+        }
+        #imagen4 {
+            clip-path: polygon(16.32% 99.39%, 58.93% 99.70%, 60.08% 69.1%, 57.39% 41.26%, 47.24% 25.53%, 46.1% -1.88%, 37.29% 19.12%, 26.29% 29.9%, 18.04% 18.6%, 12.64% 19.43%, 10.14% 35.54%, 14.96% 57.36%, 5.84% 67.27%);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Shapes 1. Círculo.</h1>
+            <img src="images/nano_nastasia.jpg" alt="Gato" width="450" id="imagen1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, id rem qui aperiam temporibus ipsam consectetur dignissimos fuga et autem dolorum eos at. Quis, esse id laboriosam dolore aliquam architecto velit. Odio, officiis! Iusto id earum deserunt in ut? Asperiores porro aliquid odit maxime blanditiis distinctio consectetur ipsa necessitatibus soluta?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis doloremque nobis aut asperiores obcaecati iste laudantium ex nihil sit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptas accusantium porro cupiditate sint, natus voluptates laboriosam exercitationem ipsum fugiat itaque nesciunt mollitia odit repellendus. Repudiandae aliquid hic unde.</p>
+        </section>
+        <section>
+            <h1>Shapes 2. Png.</h1>
+            <img src="images/cat_PNG50516.png" alt="gato 2." width="400" id="imagen2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus reprehenderit veniam doloremque animi soluta laboriosam tempore quia asperiores ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, totam ea! Fuga, qui vel et sint at distinctio corporis labore modi ratione eius non incidunt neque consectetur eligendi quod cum fugiat suscipit earum eaque! Quia itaque magni illo ex laborum beatae, aperiam autem odit, debitis suscipit voluptates? Sit, quos magnam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati cumque dicta totam error, aut similique provident natus, eius et distinctio. Quaerat quam maxime quis, modi reiciendis praesentium facere, voluptatem iure consectetur corrupti laboriosam blanditiis.</p> 
+        </section>
+        <section>
+            <h1>Shapes 3. Polygono.</h1>
+            <img src="images/grief-and-loss.jpg" alt="Gato" id="imagen3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, id rem qui aperiam temporibus ipsam consectetur dignissimos fuga et autem dolorum eos at. Quis, esse id laboriosam dolore aliquam architecto velit. Odio, officiis! Iusto id earum deserunt in ut? Asperiores porro aliquid odit maxime blanditiis distinctio consectetur ipsa necessitatibus soluta?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis doloremque nobis aut asperiores obcaecati iste laudantium ex nihil sit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptas accusantium porro cupiditate sint, natus voluptates laboriosam exercitationem ipsum fugiat itaque nesciunt mollitia odit repellendus. Repudiandae aliquid hic unde.</p>
+        </section>
+        <section>
+            <h1>Shapes 4. Clip.</h1>
+            <img src="images/grief-and-loss.jpg" alt="Gato" id="imagen4">
+        </section>
+    </div>
+</body>
+</html>
