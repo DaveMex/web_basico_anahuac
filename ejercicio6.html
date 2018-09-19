@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Css shapes.</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.2/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script>
+// interval passed to reveal
+window.sr = ScrollReveal({ duration: 2000 });
+sr.reveal('.box', 50);
+
+// or...
+
+// interval and custom config passed to reveal
+window.sr = ScrollReveal();
+sr.reveal('.box', { duration: 2000 }, 50);
+    </script>
+    
     <style>
         #container {
             display: grid;
@@ -35,28 +50,28 @@
                 <li><a href="index.html">Inicio</a></li>
             </ul>
         </nav>
-        <section>
+        <section class="box foo">
             <h1>Shapes 1. Círculo.</h1>
             <img src="images/nano_nastasia.jpg" alt="Gato" width="450" id="imagen1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, id rem qui aperiam temporibus ipsam consectetur dignissimos fuga et autem dolorum eos at. Quis, esse id laboriosam dolore aliquam architecto velit. Odio, officiis! Iusto id earum deserunt in ut? Asperiores porro aliquid odit maxime blanditiis distinctio consectetur ipsa necessitatibus soluta?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis doloremque nobis aut asperiores obcaecati iste laudantium ex nihil sit?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptas accusantium porro cupiditate sint, natus voluptates laboriosam exercitationem ipsum fugiat itaque nesciunt mollitia odit repellendus. Repudiandae aliquid hic unde.</p>
         </section>
-        <section>
+        <section class="box bar">
             <h1>Shapes 2. Png.</h1>
             <img src="images/cat_PNG50516.png" alt="gato 2." width="400" id="imagen2">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus reprehenderit veniam doloremque animi soluta laboriosam tempore quia asperiores ab!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, totam ea! Fuga, qui vel et sint at distinctio corporis labore modi ratione eius non incidunt neque consectetur eligendi quod cum fugiat suscipit earum eaque! Quia itaque magni illo ex laborum beatae, aperiam autem odit, debitis suscipit voluptates? Sit, quos magnam.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati cumque dicta totam error, aut similique provident natus, eius et distinctio. Quaerat quam maxime quis, modi reiciendis praesentium facere, voluptatem iure consectetur corrupti laboriosam blanditiis.</p> 
         </section>
-        <section>
+        <section class="box">
             <h1>Shapes 3. Polygono.</h1>
             <img src="images/grief-and-loss.jpg" alt="Gato" id="imagen3">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, id rem qui aperiam temporibus ipsam consectetur dignissimos fuga et autem dolorum eos at. Quis, esse id laboriosam dolore aliquam architecto velit. Odio, officiis! Iusto id earum deserunt in ut? Asperiores porro aliquid odit maxime blanditiis distinctio consectetur ipsa necessitatibus soluta?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reiciendis doloremque nobis aut asperiores obcaecati iste laudantium ex nihil sit?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptas accusantium porro cupiditate sint, natus voluptates laboriosam exercitationem ipsum fugiat itaque nesciunt mollitia odit repellendus. Repudiandae aliquid hic unde.</p>
         </section>
-        <section>
+        <section class="box">
             <h1>Shapes 4. Clip.</h1>
             <img src="images/grief-and-loss.jpg" alt="Gato" id="imagen4">
         </section>
