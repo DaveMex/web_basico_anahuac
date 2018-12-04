@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax.</title>
+    <style>
+        html, body {margin: 0; padding: 0;}
+        header {background: #000000; height: 80px;}
+        .some-class {
+        min-height: 50vh;
+        background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <header id="">
+
+    </header>
+    <div class="container">
+        
+        <div class="some-class" data-src="images/nano_nastasia.jpg" data-pos-x="left" data-parallax></div>
+        <div>
+            <h1>Test</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere doloremque voluptatum ratione cupiditate repudiandae ipsum, animi earum soluta excepturi dolore magnam, cum hic accusantium, ab eveniet laboriosam a. Officia, labore!</p>
+        </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/nano_nastasia.jpg"></div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"></div>
+
+    </div>
+    <div class="my-parallax-window">
+            <div class="my-parallax-slider">
+              <img src="images/nano_nastasia.jpg"/>
+              <p>This content and the image will move when scrolling</p>
+            </div>
+            <div class="some-optional-fixed-content">
+              <p>This content will stay in place</p>
+            </div>
+          </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+        // this is called automatically:
+        if(Parallax.AUTOINIT) {
+        $('[data-parallax]').parallax();
+        }
+        // if you don't previously set  
+        Parallax.AUTOINIT = false;
+
+
+Parallax.DEFAULTS = {
+  src: null,
+  speed: .2,
+  bleed: 0,
+  zIndex: -100,
+  posX: 'center',
+  posY: 'center',
+  overScrollFix: false,
+  excludeAgents: /(iPod|iPhone|iPad|Android)/,
+  aspectRatio: null,
+  // jquery selectors
+  sliderSelector: '>.parallax-slider',
+  mirrorSelector: 'body',
+  // callback functions:
+  afterRefresh: null,
+  afterRender: null,
+  afterSetup: null,
+  afterDestroy: null,
+};
+    </script>
+</body>
+</html>
